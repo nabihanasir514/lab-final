@@ -44,7 +44,7 @@ def new_student(post_id):
         s['id']=get.date('id',data['id'])
         s['name']=get.date('name',data['name'])
         s['condition']=get.date('condition',data['condition'])
-        return jsonify({"message":"student created"}),201
+        return jsonify({"message":"patient created"}),201
     
     return jsonify("message","missing name or conditions"),404
 
